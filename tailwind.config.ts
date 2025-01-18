@@ -1,3 +1,4 @@
+import { text } from "stream/consumers";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,6 +12,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "rgba(58, 12, 163, 1)",
+        textColour2: "rgba(43, 43, 43, 1)",
+        textColour3: "rgba(128, 128, 128, 1)",
+        textColour4: "rgba(170, 170, 170, 1)",
+        colour1: "rgba(67, 97, 238, 1)",
       },
     },
   },

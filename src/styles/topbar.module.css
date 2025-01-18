@@ -1,0 +1,31 @@
+.topbar {
+  @apply max-lg:hidden bg-primary text-white text-sm py-2;
+}
+
+.topbarContainer {
+  @apply w-full container mx-auto flex justify-between items-center px-4;
+}
+
+.topbarLeft {
+  @apply flex items-center space-x-2;
+}
+
+.topbarRight {
+  @apply flex items-center space-x-6;
+}
+
+.topbarIcon {
+  @apply w-5 h-5;
+}
+
+.topbarLink {
+  @apply hover:underline;
+}
+
+.topbarPhone {
+  @apply flex items-center space-x-2 w-full whitespace-nowrap;
+}
+
+.topbarEmail {
+  @apply flex items-center space-x-2 w-full whitespace-nowrap;
+}

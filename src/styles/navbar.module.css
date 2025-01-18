@@ -1,0 +1,55 @@
+/* Navbar genel yapısı */
+.navbar {
+  @apply bg-white
+}
+
+/* Navbar container */
+.navbarContainer {
+  @apply xl:container mx-auto flex items-center justify-between py-4 px-6 lg:px-8 gap-2;
+}
+
+/* Logo */
+.logo {
+  @apply flex items-center justify-center;
+}
+
+/* Hamburger Menü */
+.hamburger {
+  @apply lg:hidden text-textColour2;
+}
+
+/* Menü listesi */
+.menuList {
+  @apply hidden absolute top-16 left-0 w-full font-medium leading-6 text-lg bg-white lg:static lg:flex lg:space-x-0 lg:w-auto;
+}
+
+.menuListOpen {
+  @apply block mt-12;
+}
+
+/* Menü öğesi */
+.menuItem {
+  @apply  flex gap-2 py-4 px-6  text-textColour2 text-lg  ;
+}
+
+.menuItemActive {
+    background-color: rgba(67, 97, 238, 0.3);
+  @apply rounded-full;
+}
+
+/* Login/Register ve Add Listing */
+.authLinksDesktop {
+  @apply flex  space-x-4 max-lg:hidden;
+}
+
+.addListing {
+  @apply bg-primary rounded-full flex gap-2 text-white text-lg px-6 py-4 whitespace-nowrap;
+}
+
+.loginIcon {
+  @apply w-4 h-4 self-center place-content-center;
+}
+
+.addListingIcon {
+  @apply w-5 h-5 self-center place-content-center;
+}
