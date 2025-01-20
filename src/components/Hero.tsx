@@ -3,7 +3,6 @@ import styles from "../styles/hero.module.css";
 import SearchForm from "./SearchForm";
 import TitleBox from "./TitleBox";
 import HeroSlider from "./HeroSlider";
-import hotelBedroom1 from "../images/hotel-bedroom1.png";
 import Statistics from "./Statistics";
 
 const Hero = () => {

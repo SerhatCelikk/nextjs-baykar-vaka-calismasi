@@ -1,0 +1,21 @@
+.aboutUsGallery {
+    @apply flex gap-4 p-0 m-0 relative w-full justify-center; /* Varsayılan boşlukları kaldır */
+  }
+.circle3 {
+    @apply absolute bottom-8 right-[25%] md:w-[60px] md:h-[60px] w-10 h-10 z-0 opacity-60; /* Dairenin konumu */
+}
+  
+  .mainImageWrapper {
+    @apply w-1/2 m-0 ; /* Büyük görsel için ayarlamalar */
+  }
+  .mainImage {
+    @apply h-full object-cover rounded-[30px] shadow-none w-full mt-12;
+  }
+  
+  .smallImages {
+    @apply flex flex-col h-full w-1/2 ;
+  }
+  
+  .image {
+    @apply rounded-xl m-0 p-0 object-cover mt-6; /* Tüm boşlukları sıfırla */
+  }

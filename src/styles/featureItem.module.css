@@ -1,0 +1,21 @@
+.featureItemContainer{
+  @apply w-full flex max-lg:justify-center;
+}
+
+.featureItem {
+    box-shadow: 4px 10px 30px 0px rgba(0, 0, 0, 0.06);
+    @apply flex justify-around gap-2 bg-white pl-[30px] rounded-3xl mt-8 max-w-[400px];
+}
+
+.icon {
+    @apply w-10 h-10 self-center;
+}
+  
+.featureTitle {
+    @apply text-colour1 text-[19.4px] font-bold w-full m-[30px] mb-[10px];
+}
+  
+.featureDescription {
+    @apply text-textColour3 m-[30px] mt-[10px];
+}
+  
