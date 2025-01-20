@@ -6,7 +6,7 @@ import FeatureItem from "./FeatureItem";
 
 const AboutUsSection = () => {
   return (
-    <section className={styles.aboutUsSection}>
+    <section className={styles.aboutUsSection} id="about">
     <img src="/images/100x100-circle.png" alt="Decorative Circle" className={styles.circle2} />
       
       <div className={styles.aboutUscontainer}>

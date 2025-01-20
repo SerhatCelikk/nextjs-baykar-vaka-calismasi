@@ -41,7 +41,7 @@ const blogs = [
 
 const BlogSection = () => {
   return (
-    <section className={styles.blogSection}>
+    <section className={styles.blogSection} id="blogs">
       <div className={styles.header}>
         <h3 className={styles.subTitle}>What’s Trending</h3>
         <h2 className={styles.title}>Latest Blogs & Posts</h2>
@@ -72,12 +72,12 @@ const BlogSection = () => {
               1444: {
                 slidesPerView: 3,
               },
-          }
+            }
           }
           loop={true}
           centeredSlides={true}
           centeredSlidesBounds={true}
-          
+
           className={styles.slider}
         >
           {blogs.map((blog) => (
@@ -95,19 +95,19 @@ const BlogSection = () => {
           <img src="/icons/arrow-right.svg" alt="Next" />
         </button>
       </div>
-      
+
       {/*Mobil için*/}
       <div className={styles.mobileBlogCardContainer}>
-      {
-        blogs.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
-        ))
-      }
-      <button
-        className={styles.viewMoreBlogsButton}
+        {
+          blogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))
+        }
+        <button
+          className={styles.viewMoreBlogsButton}
         >
-        View more blogs
-      </button>
+          View more blogs
+        </button>
       </div>
 
     </section>

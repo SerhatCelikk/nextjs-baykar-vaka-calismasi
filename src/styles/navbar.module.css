@@ -1,6 +1,14 @@
 /* Navbar genel yapısı */
 .navbar {
-  @apply bg-white
+  @apply fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out bg-white;
+}
+
+.navbarVisible {
+  @apply translate-y-0;
+}
+
+.navbarHidden {
+  @apply -translate-y-full;
 }
 
 /* Navbar container */
@@ -15,12 +23,12 @@
 
 /* Hamburger Menü */
 .hamburger {
-  @apply lg:hidden text-textColour2
+  @apply lg:hidden text-textColour2;
 }
 
 /* Menü listesi */
 .menuList {
-  @apply hidden absolute top-16 left-0 w-full font-medium leading-6 text-lg bg-white lg:static lg:flex lg:space-x-0 lg:w-auto;
+  @apply hidden absolute top-6 left-0 w-full font-medium leading-6 text-lg bg-white z-10 lg:static lg:flex lg:space-x-0 lg:w-auto;
 }
 
 .menuListOpen {
@@ -29,17 +37,17 @@
 
 /* Menü öğesi */
 .menuItem {
-  @apply  flex gap-2 py-4 px-6  text-textColour2 text-lg  ;
+  @apply flex gap-2 py-4 px-6 text-textColour2 text-lg;
 }
 
 .menuItemActive {
-    background-color: rgba(67, 97, 238, 0.3);
+  background-color: rgba(67, 97, 238, 0.3);
   @apply rounded-full;
 }
 
 /* Login/Register ve Add Listing */
 .authLinksDesktop {
-  @apply flex  space-x-4 max-lg:hidden;
+  @apply flex space-x-4 max-lg:hidden;
 }
 
 .addListing {

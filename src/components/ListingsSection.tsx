@@ -15,29 +15,29 @@ const ListingsSection = () => {
   );
 
   return (
-    <section className={styles.listingsSection}>
+    <section className={styles.listingsSection} id="listings">
       {/* Başlık Alanı */}
       <div className={styles.upperContainer}>
         <div className={styles.leftSide}>
-            <TitleBox
-                upperText="Checkout Our New"
-                titleText="Latest Listed Properties"
-                titleDescription="Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus."
-                />
+          <TitleBox
+            upperText="Checkout Our New"
+            titleText="Latest Listed Properties"
+            titleDescription="Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus."
+          />
         </div>
 
         {/* Filtre Butonları */}
         <div className={styles.rightSide}>
-            <div className={styles.filters}>
-                {["All", "Sell", "Rent"].map((btn) => (
-                <FilterButton
-                    key={btn}
-                    type={btn}
-                    isActive={filter === btn}
-                    onClick={() => setFilter(btn)}
-                />
-                ))}
-            </div>
+          <div className={styles.filters}>
+            {["All", "Sell", "Rent"].map((btn) => (
+              <FilterButton
+                key={btn}
+                type={btn}
+                isActive={filter === btn}
+                onClick={() => setFilter(btn)}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -47,9 +47,9 @@ const ListingsSection = () => {
           <ListingCard key={listing.id} listing={listing} />
         ))}
         <button
-            className={styles.viewMorePropertiesButton}
-            >
-            View more properties
+          className={styles.viewMorePropertiesButton}
+        >
+          View more properties
         </button>
       </div>
 

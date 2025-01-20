@@ -7,7 +7,7 @@ import Statistics from "./Statistics";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id='home'>
 
       <img src="/images/60x60-circle.png" alt="Decorative Circle" className={styles.circle} />
       <div className={styles.heroContainer}>

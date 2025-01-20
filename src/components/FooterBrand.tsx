@@ -5,7 +5,7 @@ const FooterBrand = () => {
   return (
     <div className={styles.footerBrand}>
       <div className={styles.logo}>
-        <img src="/icons/logo.svg" alt="Logo" />
+        <img src="/icons/footer-logo.svg" alt="Logo" />
       </div>
       <p className={styles.description}>
         Lorem ipsum has been the industry standard dummy text.
