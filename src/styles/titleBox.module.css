@@ -1,0 +1,12 @@
+.titleBox{
+    @apply flex-1 w-full;
+}
+.upperText{
+    @apply text-lg uppercase font-bold text-colour1 mb-4 ;
+}
+.titleText{
+    @apply text-6xl font-semibold text-textColour1 mt-4 mb-5;
+}
+.descriptionText{
+    @apply text-textColour3 text-lg mt-5;
+}

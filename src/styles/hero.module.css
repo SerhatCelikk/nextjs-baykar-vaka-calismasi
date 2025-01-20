@@ -1,0 +1,38 @@
+/* Hero bölümü */
+.hero {
+    @apply from-blue-50 to-white pt-10 pb-20 bg-[url('/images/backgrounds/bg-big-circle.png')] md:bg-cover bg-auto w-full bg-center bg-no-repeat;
+  }
+
+.circle {
+    @apply absolute w-[60px] h-[60px] top-[46%] md:left-[45%] left-[270px] z-0 opacity-80;
+  }
+
+.circle2 {
+    @apply max-md:hidden absolute w-[100px] h-[100px] bottom-[-10%] md:left-[10%] z-0 ;
+  }
+
+.heroContainer {
+    @apply container w-full mx-auto md:flex-row items-center relative justify-between px-4 md:px-8 lg:grid-cols-12 grid grid-cols-6 gap-4
+  }
+
+.heroLeftSide {
+    @apply items-center col-span-6;
+  }
+
+.heroRightSide {
+    @apply col-span-6 w-full flex;
+  }
+  
+  /* Başlık ve açıklama */
+  .heading {
+    @apply text-center md:text-left text-4xl md:text-6xl font-bold text-gray-800;
+  }
+  
+  .subheading {
+    @apply text-center md:text-left text-lg text-gray-600 mt-4;
+  }
+  
+  /* Görseller */
+  .heroImage {
+    @apply rounded-lg shadow-lg mt-6 md:mt-0;
+  }

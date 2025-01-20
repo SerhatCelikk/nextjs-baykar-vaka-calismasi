@@ -1,0 +1,33 @@
+.statisticsContainer {
+    @apply flex w-full max-md:flex-wrap justify-center items-center gap-6 mt-10;
+  }
+  
+  .card {
+    @apply flex items-center bg-white shadow-lg rounded-full p-6 gap-4 max-w-[360px] min-h-[100px] ;
+    width: fit-content;
+  }
+  
+  /* Avatar Grubu */
+  .avatars {
+    @apply flex -space-x-3 w-full;
+  }
+  
+  .avatar {
+    @apply w-9 h-9 rounded-full;
+  }
+  
+  .more {
+    @apply flex items-center justify-center w-9 h-9 rounded-full text-white font-bold bg-[url('/images/testimonials/user6.png')] bg-center bg-no-repeat bg-cover;
+  }
+  
+
+  /* House Icon */
+  .houseIcon {
+    @apply w-12 h-12 rounded-full object-cover;
+  }
+  
+  /* Yazı Alanı */
+  .text {
+    @apply text-sm font-medium text-textColour2 text-[19.4px] leading-7;
+  }
+  

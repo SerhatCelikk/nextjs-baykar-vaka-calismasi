@@ -1,0 +1,3 @@
+.statisticsContainer {
+    @apply w-full flex flex-wrap md:flex-row justify-center gap-4;
+}

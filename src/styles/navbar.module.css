@@ -15,7 +15,7 @@
 
 /* Hamburger Menü */
 .hamburger {
-  @apply lg:hidden text-textColour2;
+  @apply lg:hidden text-textColour2
 }
 
 /* Menü listesi */
