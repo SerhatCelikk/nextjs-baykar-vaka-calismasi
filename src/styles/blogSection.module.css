@@ -1,0 +1,107 @@
+.blogSection {
+    @apply  bg-primary text-white py-16 w-full;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .subTitle {
+    @apply  tracking-[3px] font-medium uppercase mb-4 mt-4
+  }
+  
+  .title {
+    @apply font-semibold md:text-[39.8px] text-[27.6px]
+  }
+  
+  .sliderContainer {
+    @apply relative flex items-center justify-center max-md:hidden
+  }
+  .slider {
+    @apply md:w-3/4 lg:w-1/2 overflow-hidden
+  }
+/* Pagination alanı */
+.swiper-pagination {
+  gap: 15px;
+  margin-top: 30px;
+  @apply
+  flex flex-col w-full items-center justify-between gap-4 mt-5;
+}
+
+.swiper-pagination-horizontal{
+  @apply flex items-center w-full justify-between
+}
+
+/* Pagination çizgileri */
+.customBullet {
+  width: 80px;
+  height: 4px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  margin-top: 0% !important;
+  @apply top-0
+  
+}
+.swiper-pagination-bullet-active {
+  background-color: #4361EE;
+  transform: scale(1.2);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #6366f1; /* Aktif renk (mor) */
+  transform: scale(1.2); /* Aktif olanı büyütme */
+}
+
+  .slide {
+    @apply max-w-[340px]
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    @apply bg-white text-primary
+  }
+  
+  .prevButton {
+    @apply left-[40%];
+  }
+  
+  .nextButton {
+    @apply right-[40%];
+  }
+  
+  .paginationBullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+    
+  }
+  
+  .paginationBulletActive {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+.mobileBlogCardContainer {
+  @apply flex flex-col container items-center justify-center max-md:justify-between md:hidden
+}
+.viewMoreBlogsButton {
+  @apply md:hidden flex w-1/2 text-center justify-center  py-2 px-4 border text-[16px] font-medium bg-white border-primary text-primary rounded-full cursor-pointer transition-colors min-w-[80px] hover:bg-primary hover:text-white hover:border-white;
+}

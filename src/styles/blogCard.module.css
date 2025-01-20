@@ -1,0 +1,36 @@
+.card {
+    @apply max-w-[340px]
+  }
+  
+  .imageWrapper {
+    @apply relative
+  }
+  
+  .image {
+    @apply w-full h-48 object-cover shadow-lg rounded-[30px];
+  }
+  
+  .date {
+    @apply uppercase absolute top-0 left-6 pt-1 bg-white text-center text-textColour2 px-3 py-1 rounded-b-[10px] font-bold max-w-[55px]
+  }
+
+  .day {
+    @apply text-textColour2 md:text-[19.4px] text-center text-[16px]
+  }
+
+  .month {
+    @apply text-textColour3 text-center md:text-[16px] text-[13.3px]
+  }
+  
+  .content {
+    @apply p-4
+  }
+  
+  .title {
+    @apply text-[27.6px] mb-2 leading-[41.4px] w-full
+  }
+  
+  .description {
+    @apply text-textColour5
+  }
+  

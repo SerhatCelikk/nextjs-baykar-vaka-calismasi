@@ -1,0 +1,36 @@
+.card {
+    @apply bg-white rounded-[30px] overflow-hidden transition-shadow hover:shadow-lg min-w-[340px];
+  }
+  
+  .imageWrapper {
+    @apply relative;
+  }
+  
+  .image {
+    @apply rounded-t-lg w-[340px] h-[340px] object-cover rounded-[30px];
+  }
+  
+  .label {
+    @apply absolute top-2 left-2 px-3 py-1 text-white text-xs rounded-full;
+  }
+  
+  .cardContent {
+    @apply p-4;
+  }
+  
+  .price {
+    @apply text-textColour2 font-semibold text-[27.6px];
+  }
+  
+  .title {
+    @apply font-semibold text-textColour2 mt-1 text-[19.4px];
+  }
+  
+  .address {
+    @apply text-sm text-textColour3 mt-1 text-[16px];
+  }
+  
+  .features {
+    @apply flex w-full whitespace-nowrap gap-4 items-center mt-2 text-[16px] text-textColour2;
+  }
+  

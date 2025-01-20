@@ -1,0 +1,8 @@
+.filterButton {
+    @apply py-2 px-4 border text-[16px] border-primary text-primary rounded-full cursor-pointer transition-colors min-w-[80px];
+  }
+  
+  .active {
+    @apply bg-primary text-white border-primary;
+  }
+  
