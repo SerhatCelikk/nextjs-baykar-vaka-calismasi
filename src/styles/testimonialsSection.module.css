@@ -1,0 +1,112 @@
+.testimonialsSection {
+    @apply pt-10 pb-20 w-full relative;;
+  }
+.testimonialscontainer {
+    @apply container w-full mx-auto md:flex-row items-center relative justify-between px-4 md:px-8 lg:grid-cols-12 grid grid-cols-6 gap-4
+  }
+
+  .leftSide {
+    @apply items-center col-span-6;;
+  }
+  
+
+  .rightSide {
+    @apply col-span-6 w-full flex;
+  }
+  /* Slider Container */
+.sliderContainer {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  /* Swiper genel ayarlar */
+  .mySwiper {
+    width: 100%;    
+    height: 250px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.1);
+
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    align-items: center;
+    margin-right: 50px;
+
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+  /* Navigation Düğmeleri */
+  .prevButton,
+  .nextButton {
+    @apply bottom-10 w-10 h-10 bg-white border-primary border    rounded-full flex items-center justify-center shadow-md transition-transform cursor-pointer z-10; 
+  }
+  
+  /* Sol düğme */
+  .prevButton {
+    left: 20px;
+  }
+  .navigationButtonsContainer {
+    @apply w-full flex items-center justify-start gap-4;
+  }
+  
+  /* Sağ düğme */
+  .nextButton {
+    right: 40px;
+  }
+  
+  /* Hover efekti */
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+  }
+  
+  
+  /* Pagination alanı */
+  .swiper-pagination {
+    gap: 15px;
+    margin-top: 20px;
+    @apply
+    flex flex-col w-full items-center justify-between gap-4 mt-5;
+  }
+  
+  .swiper-pagination-horizontal{
+    @apply flex items-center w-full justify-between
+  }
+  
+  /* Pagination çizgileri */
+  .customBullet {
+    width: 4px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4361EE;
+    transform: scale(1.2);
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #6366f1; /* Aktif renk (mor) */
+    transform: scale(1.2); /* Aktif olanı büyütme */
+  }
+  

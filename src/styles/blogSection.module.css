@@ -62,7 +62,7 @@
   .prevButton,
   .nextButton {
     position: absolute;
-    top: 100%;
+    top: 85%;
     transform: translateY(-50%);
     width: 2.5rem;
     height: 2.5rem;

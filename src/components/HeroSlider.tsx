@@ -6,7 +6,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import styles from "../styles/heroSlider.module.css"; // Module CSS kullanımı
+import styles from "../styles/heroSlider.module.css";
 
 const HeroSlider = ({ images }: { images: string[] }) => {
   return (

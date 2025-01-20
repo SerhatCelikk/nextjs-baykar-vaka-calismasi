@@ -1,5 +1,5 @@
 .card {
-    @apply max-w-[340px]
+    @apply max-w-[340px] mb-20
   }
   
   .imageWrapper {
