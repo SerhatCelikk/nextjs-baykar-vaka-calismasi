@@ -6,7 +6,7 @@
   }
 
   .leftSide {
-    @apply items-center col-span-6;;
+    @apply items-center col-span-6 mt-12 mb-12;
   }
   
 
@@ -62,7 +62,7 @@
     left: 20px;
   }
   .navigationButtonsContainer {
-    @apply w-full flex items-center justify-start gap-4;
+    @apply w-full flex items-center justify-start gap-4 mt-8 mb-12;
   }
   
   /* Sağ düğme */

@@ -1,0 +1,71 @@
+.footer {
+    @apply relative bg-[#ECEFFD] text-textColour2 justify-center ;
+  }
+  .footerTop {
+    @apply flex flex-col md:flex-row items-start justify-between gap-8 p-8 mx-auto container;
+  }
+  
+  .footerBrand {
+    @apply flex-1 space-y-4;
+  }
+  
+  .logo img {
+    @apply w-24 h-24;
+  }
+  
+  .description {
+    @apply text-sm text-textColour2;
+  }
+  
+  .contactInfo p {
+    @apply flex items-center text-textColour2 fill-textColour2 gap-2 mt-2 text-sm;
+  }
+  
+  .footerLinks {
+    @apply flex-1 flex justify-between;
+  }
+  
+  .linksSection h3 {
+    @apply text-textColour1 text-[19.4px] font-semibold mb-4;
+  }
+  
+  .linksSection ul {
+    @apply space-y-2 text-sm;
+  }
+  
+  .footerSubscribe {
+    @apply flex-1 space-y-4 ;
+  }
+  
+  .subscribeForm {
+    @apply flex items-center bg-white text-textColour4 rounded-full shadow-md overflow-hidden;
+  }
+
+  .subscribeText {
+    @apply text-textColour1  font-semibold text-[19.4px];
+  }
+  
+  .subscribeForm input {
+    @apply flex-grow  px-4 py-2 outline-none;
+  }
+  
+  .subscribeForm button {
+    @apply bg-primary  text-textColour2 px-4 py-4 rounded-full flex items-center justify-center;
+  }
+  
+  .socialLinks h4 {
+    @apply text-textColour1 text-[19.4px] font-semibold mb-2;
+  }
+  
+  .socialIcons img {
+    @apply w-6 h-6 mr-4 inline-block;
+  }
+  
+  .footerBottom {
+    @apply bg-black text-textColour4 flex justify-around  py-4;
+  }
+  
+  .terms span {
+    @apply text-sm text-textColour4 mx-4 cursor-pointer;
+  }
+  

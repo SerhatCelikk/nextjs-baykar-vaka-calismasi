@@ -2,7 +2,7 @@ const listings = [
     {
       id: 1,
       image: "/images/listings/1.png",
-      label: "Popular",
+      label: "Popular" as 'Popular',
       type: "Sell",
       labelColor: "red",
       price: "$5,970",
@@ -14,7 +14,7 @@ const listings = [
     {
       id: 2,
       image: "/images/listings/2.png",
-      label: "New Listing",
+      label: "New Listing" as 'New Listing',
       type: "Rent",
       labelColor: "blue",
       price: "$1,970",
@@ -26,7 +26,7 @@ const listings = [
     {
       id: 3,
       image: "/images/listings/3.png",
-      label: "Discounted Price",
+      label: "Discounted Price" as 'Discounted Price',
       type: "Sell",
       labelColor: "green",
       price: "$3,450",
@@ -38,7 +38,7 @@ const listings = [
     {
       id: 4,
       image: "/images/listings/4.png",
-      label: "Popular",
+      label: "Popular" as 'Popular',
       type: "Sell",
       labelColor: "red",
       price: "$2,389",
@@ -50,7 +50,7 @@ const listings = [
     {
       id : 5,
       image: "/images/listings/5.png",
-      label: "New Listing",
+      label: "New Listing"  as 'New Listing',
       type: "Rent",
       labelColor: "blue",
       price: "$5,970",

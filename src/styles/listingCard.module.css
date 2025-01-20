@@ -11,7 +11,7 @@
   }
   
   .label {
-    @apply absolute top-2 left-2 px-3 py-1 text-white text-xs rounded-full;
+    @apply absolute bottom-3 gap-2 text-[16px] font-medium left-4 px-3 py-1 text-center rounded-full flex items-center  whitespace-nowrap;
   }
   
   .cardContent {
