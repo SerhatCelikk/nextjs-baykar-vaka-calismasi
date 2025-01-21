@@ -3,11 +3,15 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/navbar.module.css";
 import Topbar from "./Topbar";
 
+type NavbarProps = "Home" | "About" | "Listings" | "Services" | "Blogs";
+
+const navbarItems = ["Home", "About", "Listings", "Services", "Blogs"] as NavbarProps[];
+
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("Home");
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [activeItem, setActiveItem] = useState<NavbarProps>("Home");
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
@@ -33,14 +37,13 @@ const Navbar = () => {
     }
   }, [lastScrollY]);
 
-  const handleItemClick = (item: string) => {
+  const handleItemClick = (item: NavbarProps) => {
     setActiveItem(item);
   };
 
   return (
-    <nav className={`${styles.navbar} ${
-      isVisible ? styles.navbarVisible : styles.navbarHidden
-    }`}
+    <nav className={`${styles.navbar} ${isVisible ? styles.navbarVisible : styles.navbarHidden
+      }`}
     >
       <Topbar />
       <div className={styles.navbarContainer}>
@@ -48,12 +51,11 @@ const Navbar = () => {
         <ul
           className={`${styles.menuList} ${isOpen ? styles.menuListOpen : ""}`}
         >
-          {["Home", "About", "Listings", "Services", "Blogs"].map((item) => (
+          {navbarItems.map((item) => (
             <li
               key={item}
-              className={`${styles.menuItem} ${
-                activeItem === item ? styles.menuItemActive : ""
-              }`}
+              className={`${styles.menuItem} ${activeItem === item ? styles.menuItemActive : ""
+                }`}
               onClick={() => handleItemClick(item)}
             >
               <a href={`#${item.toLowerCase()}`}
@@ -71,10 +73,8 @@ const Navbar = () => {
         <div className={styles.authLinksDesktop}>
           <a
             href="#"
-            className={`${styles.menuItem} ${
-              activeItem === "loginRegister" ? styles.menuItemActive : ""
-            }`}
-            onClick={() => handleItemClick("loginRegister")}
+            className={styles.menuItem}
+            onClick={() => handleItemClick("Home")}
           >
             <img
               src="/icons/login.svg"

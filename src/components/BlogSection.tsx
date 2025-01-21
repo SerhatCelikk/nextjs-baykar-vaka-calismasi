@@ -50,7 +50,7 @@ const blogs = [
     title: "5 Tips for First-Time Home Sellers",
     description: "In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.",
     image: "/images/blog/3.png",
-  },{
+  }, {
     id: 7,
     date: "28 Tue",
     title: "Top 10 Home Buying Mistakes to Avoid",
@@ -90,14 +90,14 @@ const BlogSection = () => {
           }}
           modules={[Navigation, Pagination]}
           pagination={{
-              enabled: true,
+            enabled: true,
             clickable: true,
             renderBullet: (index, className) =>
               `<span class="${className} ${styles.customBullet}"></span>`,
           }}
           spaceBetween={0}
           slidesPerView={3}
-          
+
           loop={true}
 
           className={styles.slider}

@@ -43,9 +43,10 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
         <img src={listing.image} alt={listing.title} className={styles.image} />
         <span
           className={styles.label}
-          style={{ backgroundColor: ListingsLabelTypes[listing.label].bgColor,
-                   color: ListingsLabelTypes[listing.label].textColor
-           }}
+          style={{
+            backgroundColor: ListingsLabelTypes[listing.label].bgColor,
+            color: ListingsLabelTypes[listing.label].textColor
+          }}
         >
           <img
             src={ListingsLabelTypes[listing.label].icon}
@@ -62,7 +63,7 @@ const ListingCard: React.FC<ListingCardProps> = ({ listing }) => {
           <img src="/icons/bed.svg" alt="bed" />
           <span>
             {listing.beds} Beds</span>
-            <img src="/icons/bathroom.svg" alt="bath" />
+          <img src="/icons/bathroom.svg" alt="bath" />
           <span>
             {listing.baths} Bath</span>
         </div>

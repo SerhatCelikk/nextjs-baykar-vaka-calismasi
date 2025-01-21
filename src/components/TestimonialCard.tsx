@@ -17,26 +17,28 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ text, name, rating, i
       <p className={styles.text}>{text}</p>
       <hr className={styles.divider} />
       <div className={styles.userContainer}>
-      <div className={styles.userInfo}>
-        <img src={image} alt={name} className={styles.userImage} />
-        <p className={styles.name}>{name}</p>
-          <div className={styles.rating}>
-            {Array(rating)
-              .fill(0)
-              .map((_, index) => (
-                <span key={index} className={styles.star}>
-                  <img src="/icons/star-filled.svg" alt="filled-star" />
-                </span>
-              ))}
-            {
-              Array(5 - rating)
+        <div className={styles.userInfo}>
+          <img src={image} alt={name} className={styles.userImage} />
+          <div className={styles.userDetails}>
+            <p className={styles.name}>{name}</p>
+            <div className={styles.rating}>
+              {Array(rating)
                 .fill(0)
                 .map((_, index) => (
                   <span key={index} className={styles.star}>
-                    <img src="/icons/star-empty.svg" alt="empty-star" />
+                    <img src="/icons/star-filled.svg" alt="filled-star" />
                   </span>
-                ))
-            }
+                ))}
+              {
+                Array(5 - rating)
+                  .fill(0)
+                  .map((_, index) => (
+                    <span key={index} className={styles.star}>
+                      <img src="/icons/star-empty.svg" alt="empty-star" />
+                    </span>
+                  ))
+              }
+            </div>
           </div>
         </div>
       </div>

@@ -12,14 +12,14 @@ const FooterBrand = () => {
       </p>
       <div className={styles.contactInfo}>
         <a href="tel:+90123 45 67">
-        <p>
-          <img src="/icons/phone-dark.svg" alt="Phone" /> +90123 45 67
-        </p>
+          <p>
+            <img src="/icons/phone-dark.svg" alt="Phone" /> +90123 45 67
+          </p>
         </a>
         <a href="mailto:mail@mail.com">
-        <p>
-          <img src="/icons/email-dark.svg" alt="Email" /> mail@mail.com
-        </p>
+          <p>
+            <img src="/icons/email-dark.svg" alt="Email" /> mail@mail.com
+          </p>
         </a>
       </div>
     </div>

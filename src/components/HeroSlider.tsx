@@ -14,8 +14,8 @@ const HeroSlider = ({ images }: { images: string[] }) => {
       {/* Swiper Slider */}
       <Swiper
         navigation={{
-                nextEl: `.${styles.nextButton}`,
-                prevEl: `.${styles.prevButton}`,
+          nextEl: `.${styles.nextButton}`,
+          prevEl: `.${styles.prevButton}`,
         }}
         modules={[Navigation, Pagination]}
         pagination={{
@@ -38,13 +38,13 @@ const HeroSlider = ({ images }: { images: string[] }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-    {/* Özel Navigation Düğmeleri */}
-    <button className={styles.prevButton}>
+      {/* Özel Navigation Düğmeleri */}
+      <button className={styles.prevButton}>
         <img src="/icons/left.svg" alt="Previous" />
-    </button>
-    <button className={styles.nextButton}>
+      </button>
+      <button className={styles.nextButton}>
         <img src="/icons/right.svg" alt="Next" />
-    </button>
+      </button>
     </div>
   );
 };

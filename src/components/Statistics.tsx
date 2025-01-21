@@ -18,7 +18,6 @@ const Statistics = () => {
           72k+ Happy Customers
         </p>
       </div>
-
       {/* Sağ Kart */}
       <div className={styles.card2}>
         <img

@@ -2,10 +2,12 @@
 import React, {useState} from "react";
 import styles from "../styles/searchForm.module.css";
 
-const SearchForm = () => {
-  const [searchType, setSearchType] = useState("sale");
+type SearchType = "sale" | "rent";
 
-  const handleSearchType = (type: string) => {
+const SearchForm = () => {
+  const [searchType, setSearchType] = useState<SearchType>("sale");
+
+  const handleSearchType = (type: SearchType) => {
     setSearchType(type);
   };
 

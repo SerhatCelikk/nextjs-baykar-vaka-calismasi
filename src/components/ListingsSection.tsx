@@ -6,7 +6,7 @@ import ListingCard from "./ListingCard";
 import TitleBox from "./TitleBox";
 import mockListingData from "../data/listings";
 
-type FilterType = "All"|"Sell"|"Rent";
+type FilterType = "All" | "Sell" | "Rent";
 
 const filterButtons = ["All", "Sell", "Rent"] as FilterType[];
 

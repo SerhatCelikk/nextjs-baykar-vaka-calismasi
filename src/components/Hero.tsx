@@ -11,15 +11,13 @@ const Hero = () => {
 
       <img src="/images/60x60-circle.png" alt="Decorative Circle" className={styles.circle} />
       <div className={styles.heroContainer}>
-
-        <div className={styles.heroLeftSide}> 
-            {/* Sol Alan */}
-            <TitleBox
-                upperText="REAL ESTATE"
-                titleText="Find a perfect home you love..!"
-                titleDescription="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
-            />
-
+        <div className={styles.heroLeftSide}>
+          {/* Sol Alan */}
+          <TitleBox
+            upperText="REAL ESTATE"
+            titleText="Find a perfect home you love..!"
+            titleDescription="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley"
+          />
           {/* Görsel */}
           <HeroSlider
             images={[
@@ -28,13 +26,11 @@ const Hero = () => {
               "/images/hero-slider/3.png",
             ]}
           />
-          </div>
-
-
-      {/* Arama Formu */}
-      <div className={styles.heroRightSide}>
-        <SearchForm />
-      </div>
+        </div>
+        {/* Arama Formu */}
+        <div className={styles.heroRightSide}>
+          <SearchForm />
+        </div>
       </div>
       <Statistics />
     </section>

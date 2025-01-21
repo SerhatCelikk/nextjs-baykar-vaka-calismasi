@@ -4,7 +4,7 @@ import styles from "../styles/aboutUsGallery.module.css";
 const AboutUsGallery = () => {
   return (
     <div className={styles.aboutUsGallery}>
-    <img src="/images/60x60-circle.png" alt="Decorative Circle" className={styles.circle3} />
+      <img src="/images/60x60-circle.png" alt="Decorative Circle" className={styles.circle3} />
       <div className={styles.mainImageWrapper}>
         <img
           src="/images/about-us-gallery/1.png"

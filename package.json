@@ -1,5 +1,6 @@
 {
   "name": "nextjs-baykar-vaka-calismasi",
+  "author": "Serhat Celik",
   "version": "0.1.0",
   "private": true,
   "scripts": {

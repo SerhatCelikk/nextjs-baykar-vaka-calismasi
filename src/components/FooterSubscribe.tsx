@@ -14,15 +14,15 @@ const FooterSubscribe = () => {
       <div className={styles.socialLinks}>
         <h4>Follow Us on</h4>
         <div className={styles.socialIcons}>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-                <img src="/icons/linkedin.svg" alt="LinkedIn" />
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-                <img src="/icons/facebook.svg" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-                <img src="/icons/instagram.svg" alt="Instagram" />
-            </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+            <img src="/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <img src="/icons/instagram.svg" alt="Instagram" />
+          </a>
         </div>
       </div>
     </div>

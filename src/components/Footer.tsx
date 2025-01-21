@@ -10,13 +10,12 @@ import FooterBottom from "./FooterBottom";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-        
-        <div className={styles.footerTop}>
-            <FooterBrand />
-            <FooterLinks />
-            <FooterSubscribe />
-        </div>
-        <FooterBottom />
+      <div className={styles.footerTop}>
+        <FooterBrand />
+        <FooterLinks />
+        <FooterSubscribe />
+      </div>
+      <FooterBottom />
     </footer>
   );
 };

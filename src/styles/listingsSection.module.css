@@ -1,42 +1,41 @@
 .listingsSection {
     @apply py-10 w-full;
-  }
+}
 .upperContainer {
     @apply container w-full mx-auto md:flex-row items-center relative justify-between px-8 md:px-8 lg:grid-cols-12 grid grid-cols-6 gap-4 mb-12 mt-20
-  }
+}
 
 .leftSide {
     @apply items-center col-span-6;
-  }
+}
 
 .rightSide {
     @apply col-span-6 w-full flex justify-center items-center mt-8 ;
-  }
+}
   
-  
-  .header {
-    @apply text-center mb-8;
-  }
-  
-  .title {
-    @apply text-primary uppercase text-sm font-semibold;
-  }
-  
-  .subtitle {
-    @apply text-2xl font-bold mt-2;
-  }
-  
-  .description {
-    @apply text-gray-500 mt-2;
-  }
-  
-  .filters {
-    @apply flex justify-center gap-4 mb-8;
-  }
-  
-  .cardGrid {
-    @apply flex md:overflow-x-scroll gap-6 z-10 w-full md:pl-[120px] xl:mx-auto max-md:flex-wrap max-md:justify-center;
-  }
-  .viewMorePropertiesButton {
-    @apply md:hidden flex w-1/2 text-center justify-center py-2 px-4 border text-[16px] border-primary text-primary rounded-full cursor-pointer transition-colors min-w-[80px] hover:bg-primary hover:text-white max-h-[49px]
-  }
+.header {
+  @apply text-center mb-8;
+}
+
+.title {
+  @apply text-primary uppercase text-sm font-semibold;
+}
+
+.subtitle {
+  @apply text-2xl font-bold mt-2;
+}
+
+.description {
+  @apply text-gray-500 mt-2;
+}
+
+.filters {
+  @apply flex justify-center gap-4 mb-8;
+}
+
+.cardGrid {
+  @apply flex md:overflow-x-scroll gap-6 z-10 w-full md:pl-[120px] xl:mx-auto max-md:flex-wrap max-md:justify-center;
+}
+.viewMorePropertiesButton {
+  @apply md:hidden flex w-1/2 text-center justify-center py-2 px-4 border text-[16px] border-primary text-primary rounded-full cursor-pointer transition-colors min-w-[80px] hover:bg-primary hover:text-white max-h-[49px]
+}
