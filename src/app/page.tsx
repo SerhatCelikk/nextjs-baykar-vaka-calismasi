@@ -6,7 +6,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 
 export default function Home() {
   return (
-    <div className="mt-6">
+    <div className="mt-[80px] md:mt-24">
       <Hero />
       <AboutUsSection />
       <ListingsSection />

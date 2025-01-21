@@ -1,5 +1,5 @@
 .card {
-    @apply bg-white rounded-[30px] overflow-hidden transition-shadow hover:shadow-lg min-w-[340px];
+    @apply bg-white rounded-[30px] overflow-hidden transition-shadow min-w-[340px];
   }
   
   .imageWrapper {

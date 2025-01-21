@@ -6,8 +6,12 @@ import ListingCard from "./ListingCard";
 import TitleBox from "./TitleBox";
 import mockListingData from "../data/listings";
 
+type FilterType = "All"|"Sell"|"Rent";
+
+const filterButtons = ["All", "Sell", "Rent"] as FilterType[];
+
 const ListingsSection = () => {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState<FilterType>("All");
 
   // Filtrelenmiş veriyi hesaplama
   const filteredListings = mockListingData.filter((listing: { type: string; }) =>
@@ -29,7 +33,7 @@ const ListingsSection = () => {
         {/* Filtre Butonları */}
         <div className={styles.rightSide}>
           <div className={styles.filters}>
-            {["All", "Sell", "Rent"].map((btn) => (
+            {filterButtons.map((btn) => (
               <FilterButton
                 key={btn}
                 type={btn}
@@ -42,7 +46,7 @@ const ListingsSection = () => {
       </div>
 
       {/* Listeleme Kartları */}
-      <div className={styles.cardGrid}>
+      <div className={[styles.cardGrid, 'no-scrollbar'].join(' ')}>
         {filteredListings.map((listing) => (
           <ListingCard key={listing.id} listing={listing} />
         ))}

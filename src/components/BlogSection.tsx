@@ -32,11 +32,46 @@ const blogs = [
   },
   {
     id: 4,
-    date: "14 Fri",
-    title: "How to Choose the Right Neighborhood for You",
-    description: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae",
+    date: "28 Tue",
+    title: "Top 10 Home Buying Mistakes to Avoid",
+    description: "Etiam eget elementum elit. Aenean dignissim dapibus vestibulum",
+    image: "/images/blog/1.png",
+  },
+  {
+    id: 5,
+    date: "08 Mon",
+    title: "How to Stage Your Home for a Quick Sale",
+    description: "Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.",
     image: "/images/blog/2.png",
+  },
+  {
+    id: 6,
+    date: "26 Wed",
+    title: "5 Tips for First-Time Home Sellers",
+    description: "In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.",
+    image: "/images/blog/3.png",
+  },{
+    id: 7,
+    date: "28 Tue",
+    title: "Top 10 Home Buying Mistakes to Avoid",
+    description: "Etiam eget elementum elit. Aenean dignissim dapibus vestibulum",
+    image: "/images/blog/1.png",
+  },
+  {
+    id: 8,
+    date: "08 Mon",
+    title: "How to Stage Your Home for a Quick Sale",
+    description: "Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.",
+    image: "/images/blog/2.png",
+  },
+  {
+    id: 9,
+    date: "26 Wed",
+    title: "5 Tips for First-Time Home Sellers",
+    description: "In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.",
+    image: "/images/blog/3.png",
   }
+
 ];
 
 const BlogSection = () => {
@@ -55,28 +90,15 @@ const BlogSection = () => {
           }}
           modules={[Navigation, Pagination]}
           pagination={{
+              enabled: true,
             clickable: true,
             renderBullet: (index, className) =>
               `<span class="${className} ${styles.customBullet}"></span>`,
           }}
-          spaceBetween={50}
+          spaceBetween={0}
           slidesPerView={3}
-          breakpoints={
-            {
-              0: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1444: {
-                slidesPerView: 3,
-              },
-            }
-          }
+          
           loop={true}
-          centeredSlides={true}
-          centeredSlidesBounds={true}
 
           className={styles.slider}
         >

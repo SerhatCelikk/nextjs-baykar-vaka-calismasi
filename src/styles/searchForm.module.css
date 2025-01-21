@@ -1,9 +1,9 @@
 /* Form genel yapısı */
 .searchFormContainer{
-  @apply container mx-auto px-4 md:px-0 flex w-full min-w-[300px] max-w-[582px] min-h-[450px]  
+  @apply container mx-auto px-4 md:px-0 flex w-full min-w-[300px] min-h-[450px] max-xl:justify-center;  
 }
 .formBox {
-    @apply bg-white w-full h-full shadow-lg rounded-[30px] flex flex-col space-y-4 md:space-y-0 md:space-x-4 gap-12;
+    @apply bg-white w-full h-full shadow-lg mx-auto xl:ml-[120px] rounded-[30px] flex flex-col space-y-4 md:space-y-0 md:space-x-4 gap-12 max-w-[420px];
   }
   .searchType {
     @apply flex items-center justify-around border-b border-[#AAAAAA] pb-4 w-full mx-0 pt-7;
@@ -19,8 +19,7 @@
   }
   
   .searchTypeButtonActive {
-    @apply text-primary border-b-2 border-primary;
-    height: 40px; /* Aynı yükseklik */
+    @apply text-primary border-b-2 border-primary h-10;
   }
 
   .searchForm {

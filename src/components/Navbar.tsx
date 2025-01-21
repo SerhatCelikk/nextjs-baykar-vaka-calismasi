@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "../styles/navbar.module.css";
+import Topbar from "./Topbar";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +42,7 @@ const Navbar = () => {
       isVisible ? styles.navbarVisible : styles.navbarHidden
     }`}
     >
+      <Topbar />
       <div className={styles.navbarContainer}>
         {/* Menü (Masaüstünde Solda) */}
         <ul

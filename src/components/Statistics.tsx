@@ -5,7 +5,7 @@ const Statistics = () => {
   return (
     <div className={styles.statisticsContainer}>
       {/* Sol Kart */}
-      <div className={styles.card}>
+      <div className={styles.card1}>
         <div className={styles.avatars}>
           <img src="/images/testimonials/user1.png" alt="User 1" className={styles.avatar} />
           <img src="/images/testimonials/user2.png" alt="User 2" className={styles.avatar} />
@@ -20,7 +20,7 @@ const Statistics = () => {
       </div>
 
       {/* Sağ Kart */}
-      <div className={styles.card}>
+      <div className={styles.card2}>
         <img
           src="/images/testimonials/home1.png"
           alt="House Icon"
